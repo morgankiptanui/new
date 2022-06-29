@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(21, 18, 18);
+}
+
+.header{
+    background-color: rgb(12, 14, 14);
+    color: rgb(247, 246, 246);
+   
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 6%;
+    align-items: center;
+}
+
+.links{
+    
+    text-align: right;
+    flex: 1;
+    
+}
+
+.links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+
+.links ul li a{
+    font-size: 14px;
+    text-decoration: none;
+    color: goldenrod;
+}
+
+.links ul li::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, goldenrod, green);
+    margin: auto;
+    display: block;
+}
+
+.links ul li:hover:after{
+    width: 100%;
+    transition: 1s;
+    
+}
+nav a{
+    text-decoration: none;
+    
+}
+nav a h1{
+    color: greenyellow;
+    text-decoration:dotted;
+    font-size: 30px;
+}
+nav a h2{
+    color: gold;
+    text-decoration: line-through;
+    font-size: 30px;
+
+}
+.greetings{
+    width: 370px;
+    height: 350px;
+    
+    padding: 20px 50px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 50px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.greetings h3{
+    color: rgb(123, 123, 120);
+}
+
+.info{
+    
+    display: flex;
+    align-items: center;
+    
+    
+    flex-direction: column;
+
+}
+ .info h1{
+    background-color: rgb(106, 111, 111);
+    font-size: 30px;
+    color: chartreuse;
+ }
+ .info h2{
+list-style: none;
+    margin-top: 20px;
+ }
+ .info ul li{
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    list-style: none;
+    position: relative;
+ }
+ .info ul li a{
+    text-decoration: none;
+    color: brown;
+    background-color:  beige;
+    border: 1px rebeccapurple;
+    border-radius: 0.5px;
+    padding: 2px auto;
+ }
